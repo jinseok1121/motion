@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Watch the 30-second Savoy Hotel Myeongdong film.">
+  <title>Savoy Hotel Myeongdong | Seoul</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Inter, system-ui, sans-serif;
+      color: #fff7ed;
+      background: #10131f;
+    }
+
+    body {
+      min-height: 100svh;
+      margin: 0;
+      background: radial-gradient(ellipse at 24% 0%, #292240, #10131f 62%);
+    }
+
+    main {
+      width: min(1040px, calc(100% - 2.5rem));
+      margin: 0 auto;
+      padding: clamp(2.5rem, 7vw, 5rem) 0 3rem;
+    }
+
+    .location {
+      margin: 0 0 .65rem;
+      color: #ffd166;
+      font-size: .8rem;
+      font-weight: 720;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 1.5rem;
+      font-size: clamp(2rem, 6vw, 4.5rem);
+      line-height: 1.03;
+      letter-spacing: -.045em;
+    }
+
+    video {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      box-sizing: border-box;
+      border: 1px solid #484258;
+      border-radius: 1rem;
+      background: #151626;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: .75rem 1rem;
+      margin-top: 1rem;
+      color: #cfcbdb;
+      font-size: .88rem;
+    }
+
+    a {
+      color: #ffd166;
+      text-underline-offset: .22em;
+    }
+
+    a:focus-visible {
+      outline: 2px solid currentColor;
+      outline-offset: 4px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="location">Myeongdong, Seoul</p>
+    <h1>Savoy Hotel</h1>
+    <video controls playsinline preload="metadata" aria-label="Savoy Hotel Myeongdong promotional film">
+      <source src="./savoy_hotel_myeongdong_promo_30s_16x9.mp4" type="video/mp4">
+      <a href="./savoy_hotel_myeongdong_promo_30s_16x9.mp4">Open the MP4</a>
+    </video>
+    <footer>
+      <span>30-second promotional film</span>
+      <a href="./savoy_hotel_myeongdong_promo_30s_16x9.mp4" download>Download MP4</a>
+    </footer>
+  </main>
+</body>
+</html>
